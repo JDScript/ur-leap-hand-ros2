@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  urdf:
+    package: custom_ur_description
+    relative_path: urdf/ur_leap_hand.urdf.xacro
+    xacro_args: name:=ur ur_type:=ur10e
+  srdf:
+    relative_path: config/ur.srdf
+  package_settings:
+    author_name: JDScript
+    author_email: jd@jdscript.net
+    generated_timestamp: 1770372751

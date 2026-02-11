@@ -1,0 +1,52 @@
+collision_objects:
+  - id: "Ground"
+    header:
+      frame_id: "base_link"
+    primitives:
+      - type: BOX
+        dimensions: [3.0, 3.0, 0.1]
+    primitive_poses:
+      - position: {x: 0.0, y: 0.0, z: -0.2}
+        orientation: {x: 0.0, y: 0.0, z: 0.0, w: 1.0}
+    operation: ADD
+  - id: "Wall_0"
+    header:
+      frame_id: "base_link"
+    primitives:
+      - type: BOX
+        dimensions: [3.0, 3.0, 0.1]
+    primitive_poses:
+      - position: {x: 0.0, y: -0.60, z: 0.0}
+        orientation: {x: 0.707, y: 0.0, z: 0.0, w: 0.707}
+    operation: ADD
+  - id: "Wall_1"
+    header:
+      frame_id: "base_link"
+    primitives:
+      - type: BOX
+        dimensions: [3.0, 3.0, 0.1]
+    primitive_poses:
+      - position: {x: 0.0, y: 1.0, z: 0.0}
+        orientation: {x: -0.707, y: 0.0, z: 0.0, w: 0.707}
+    operation: ADD
+  - id: "Wall_2"
+    header:
+      frame_id: "base_link"
+    primitives:
+      - type: BOX
+        dimensions: [3.0, 3.0, 0.1]
+    primitive_poses:
+      - position: {x: -0.35, y: 0.0, z: 0.0}
+        orientation: {x: 0.0, y: 0.707, z: 0.0, w: 0.707}
+    operation: ADD
+  - id: "Wall_3"
+    header:
+      frame_id: "base_link"
+    primitives:
+      - type: BOX
+        dimensions: [3.0, 3.0, 0.1]
+    primitive_poses:
+      - position: {x: 1.2, y: 0.0, z: 0.0}
+        orientation: {x: 0.0, y: 0.707, z: 0.0, w: 0.707}
+    operation: ADD
+  

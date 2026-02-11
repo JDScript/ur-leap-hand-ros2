@@ -1,0 +1,394 @@
+Panels:
+  - Class: rviz_common/Displays
+    Help Height: 87
+    Name: Displays
+    Property Tree Widget:
+      Expanded:
+        - /RobotModel1
+        - /TF1
+        - /TF1/Frames1/world1
+        - /TF1/Tree1
+      Splitter Ratio: 0.5
+    Tree Height: 389
+  - Class: rviz_common/Views
+    Expanded:
+      - /Current View1
+    Name: Views
+    Splitter Ratio: 0.5
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Alpha: 0.5
+      Cell Size: 1
+      Class: rviz_default_plugins/Grid
+      Color: 160; 160; 164
+      Enabled: true
+      Line Style:
+        Line Width: 0.029999999329447746
+        Value: Lines
+      Name: Grid
+      Normal Cell Count: 0
+      Offset:
+        X: 0
+        Y: 0
+        Z: 0
+      Plane: XY
+      Plane Cell Count: 10
+      Reference Frame: <Fixed Frame>
+      Value: true
+    - Alpha: 1
+      Class: rviz_default_plugins/RobotModel
+      Collision Enabled: false
+      Description File: ""
+      Description Source: Topic
+      Description Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /robot_description
+      Enabled: true
+      Links:
+        All Links Enabled: true
+        Expand Joint Details: false
+        Expand Link Details: false
+        Expand Tree: false
+        Link Tree Style: Links in Alphabetic Order
+        leap_hand_dip:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        leap_hand_dip_2:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        leap_hand_dip_3:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        leap_hand_fingertip:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        leap_hand_fingertip_2:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        leap_hand_fingertip_3:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        leap_hand_index_tip_head:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        leap_hand_mcp_joint:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        leap_hand_mcp_joint_2:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        leap_hand_mcp_joint_3:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        leap_hand_middle_tip_head:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        leap_hand_palm_lower:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        leap_hand_pip:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        leap_hand_pip_2:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        leap_hand_pip_3:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        leap_hand_ring_tip_head:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        leap_hand_thumb_dip:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        leap_hand_thumb_fingertip:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        leap_hand_thumb_pip:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        leap_hand_thumb_temp_base:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        leap_hand_thumb_tip_head:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        ur10e_base:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        ur10e_base_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        ur10e_base_link_inertia:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        ur10e_flange:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        ur10e_forearm_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        ur10e_ft_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        ur10e_shoulder_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        ur10e_tool0:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        ur10e_upper_arm_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        ur10e_wrist_1_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        ur10e_wrist_2_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        ur10e_wrist_3_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        world:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+      Mass Properties:
+        Inertia: false
+        Mass: false
+      Name: RobotModel
+      TF Prefix: ""
+      Update Interval: 0
+      Value: true
+      Visual Enabled: true
+    - Class: rviz_default_plugins/TF
+      Enabled: true
+      Filter (blacklist): ""
+      Filter (whitelist): ""
+      Frame Timeout: 15
+      Frames:
+        All Enabled: true
+        leap_hand_dip:
+          Value: true
+        leap_hand_dip_2:
+          Value: true
+        leap_hand_dip_3:
+          Value: true
+        leap_hand_fingertip:
+          Value: true
+        leap_hand_fingertip_2:
+          Value: true
+        leap_hand_fingertip_3:
+          Value: true
+        leap_hand_index_tip_head:
+          Value: true
+        leap_hand_mcp_joint:
+          Value: true
+        leap_hand_mcp_joint_2:
+          Value: true
+        leap_hand_mcp_joint_3:
+          Value: true
+        leap_hand_middle_tip_head:
+          Value: true
+        leap_hand_palm_lower:
+          Value: true
+        leap_hand_pip:
+          Value: true
+        leap_hand_pip_2:
+          Value: true
+        leap_hand_pip_3:
+          Value: true
+        leap_hand_ring_tip_head:
+          Value: true
+        leap_hand_thumb_dip:
+          Value: true
+        leap_hand_thumb_fingertip:
+          Value: true
+        leap_hand_thumb_pip:
+          Value: true
+        leap_hand_thumb_temp_base:
+          Value: true
+        leap_hand_thumb_tip_head:
+          Value: true
+        ur10e_base:
+          Value: true
+        ur10e_base_link:
+          Value: true
+        ur10e_base_link_inertia:
+          Value: true
+        ur10e_flange:
+          Value: true
+        ur10e_forearm_link:
+          Value: true
+        ur10e_ft_frame:
+          Value: true
+        ur10e_shoulder_link:
+          Value: true
+        ur10e_tool0:
+          Value: true
+        ur10e_upper_arm_link:
+          Value: true
+        ur10e_wrist_1_link:
+          Value: true
+        ur10e_wrist_2_link:
+          Value: true
+        ur10e_wrist_3_link:
+          Value: true
+        world:
+          Value: true
+      Marker Scale: 1
+      Name: TF
+      Show Arrows: false
+      Show Axes: false
+      Show Names: false
+      Tree:
+        world:
+          ur10e_base_link:
+            ur10e_base:
+              {}
+            ur10e_base_link_inertia:
+              ur10e_shoulder_link:
+                ur10e_upper_arm_link:
+                  ur10e_forearm_link:
+                    ur10e_wrist_1_link:
+                      ur10e_wrist_2_link:
+                        ur10e_wrist_3_link:
+                          ur10e_flange:
+                            ur10e_tool0:
+                              leap_hand_palm_lower:
+                                leap_hand_mcp_joint:
+                                  leap_hand_pip:
+                                    leap_hand_dip:
+                                      leap_hand_fingertip:
+                                        leap_hand_index_tip_head:
+                                          {}
+                                leap_hand_mcp_joint_2:
+                                  leap_hand_pip_2:
+                                    leap_hand_dip_2:
+                                      leap_hand_fingertip_2:
+                                        leap_hand_middle_tip_head:
+                                          {}
+                                leap_hand_mcp_joint_3:
+                                  leap_hand_pip_3:
+                                    leap_hand_dip_3:
+                                      leap_hand_fingertip_3:
+                                        leap_hand_ring_tip_head:
+                                          {}
+                                leap_hand_thumb_temp_base:
+                                  leap_hand_thumb_pip:
+                                    leap_hand_thumb_dip:
+                                      leap_hand_thumb_fingertip:
+                                        leap_hand_thumb_tip_head:
+                                          {}
+                          ur10e_ft_frame:
+                            {}
+      Update Interval: 0
+      Value: true
+  Enabled: true
+  Global Options:
+    Background Color: 48; 48; 48
+    Fixed Frame: world
+    Frame Rate: 30
+  Name: root
+  Tools:
+    - Class: rviz_default_plugins/MoveCamera
+  Transformation:
+    Current:
+      Class: rviz_default_plugins/TF
+  Value: true
+  Views:
+    Current:
+      Class: rviz_default_plugins/Orbit
+      Distance: 0.4265836179256439
+      Enable Stereo Rendering:
+        Stereo Eye Separation: 0.05999999865889549
+        Stereo Focal Distance: 1
+        Swap Stereo Eyes: false
+        Value: false
+      Focal Point:
+        X: 1.2231930494308472
+        Y: 0.24572597444057465
+        Z: 0.09057097136974335
+      Focal Shape Fixed Size: true
+      Focal Shape Size: 0.05000000074505806
+      Invert Z Axis: false
+      Name: Current View
+      Near Clip Distance: 0.009999999776482582
+      Pitch: -0.12999974191188812
+      Target Frame: <Fixed Frame>
+      Value: Orbit (rviz)
+      Yaw: 1.3568437099456787
+    Saved: ~
+Window Geometry:
+  Displays:
+    collapsed: false
+  Height: 1011
+  Hide Left Dock: false
+  Hide Right Dock: false
+  QMainWindow State: 000000ff00000000fd0000000100000000000001ad00000395fc0200000002fb000000100044006900730070006c006100790073010000003f0000021c000000cc00fffffffb0000000a00560069006500770073010000026100000173000000a900ffffff000005cd0000039500000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  Views:
+    collapsed: false
+  Width: 1920
+  X: 0
+  Y: 32
