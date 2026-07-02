@@ -1,0 +1,3 @@
+[submodule "leap_driver"]
+	path = leap_driver
+	url = https://github.com/JDScript/leap-hand-ros2.git
