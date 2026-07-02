@@ -23,7 +23,7 @@ class iPhoneURControlBridge(Node):
         super().__init__("iphone_ur_control_bridge")
 
         # Declare parameters
-        self.declare_parameter("input_pose_topic", "/device_0/camera_pose")
+        self.declare_parameter("input_pose_topic", "/record3d/device_0/camera_pose")
         self.declare_parameter("output_twist_topic", "/servo_node/delta_twist_cmds")
         self.declare_parameter("linear_scale", 2.0)
         self.declare_parameter("angular_scale", 1.0)

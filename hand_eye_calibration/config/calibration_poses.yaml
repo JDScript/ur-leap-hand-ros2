@@ -5,6 +5,35 @@
 marker_size: 0.078  # meters (7.8cm)
 marker_id: -1        # AprilTag ID to detect (set to -1 to use any)
 
+# Image source.
+# Default = raw stream (always published by realsense-ros). To use a rectified
+# stream instead, you need an image_proc rectify node running, then change to:
+#   image_topic: /camera/cam0/color/image_rect_color
+#   use_rectified_image: true
+image_topic: /camera/cam0/color/image_raw
+camera_info_topic: /camera/cam0/color/camera_info
+use_rectified_image: false    # if true, treat dist_coeffs as zero (image already rectified)
+
+# Motion + in-motion sampling parameters
+velocity_scaling: 0.15        # MoveIt max_velocity_scaling_factor (slow → less motion blur)
+acceleration_scaling: 0.15
+min_translation_delta: 0.01   # m, minimum translation change between accepted in-motion samples
+min_rotation_delta_deg: 1.0   # deg, minimum rotation change between accepted in-motion samples
+max_total_samples: 500        # cap on total samples (anchors + in-motion)
+gripper_tf_frame: tool0              # URDF wrist flange (published by robot_state_publisher).
+                                     # Same source as the UR-arm mesh you compare pointcloud against,
+                                     # so any UR teach-pendant TCP offset / DH mismatch on the
+                                     # controller side won't bias calibration.
+                                     # Use 'tool0_controller' instead only if you specifically want
+                                     # the UR's internal TCP pose (incl. teach-pendant TCP offset).
+
+# Sampling strategy.
+# In-motion samples are noisier (single-frame PnP vs anchor's averaged frames)
+# AND path-dependent (image-stamp ↔ TF clock skew biases pose lookup during motion).
+# Set false for highest run-to-run reproducibility (anchors only).
+enable_in_motion_sampling: true
+anchor_frames: 5             # # of frames averaged at each stationary anchor (was 10)
+
 joint_names:
   - elbow_joint
   - shoulder_lift_joint

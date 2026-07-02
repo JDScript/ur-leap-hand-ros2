@@ -835,5 +835,18 @@
       <child link="${prefix}ring_tip_head" />
       <origin rpy="0 0 0" xyz="0 -0.048 0.015" />
     </joint>
+    <link name="${prefix}root_link">
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <box size="0.001 0.001 0.001" />
+        </geometry>
+      </visual>
+    </link>
+    <joint name="${prefix}hand_root_fixed_joint" type="fixed">
+      <parent link="${prefix}palm_lower" />
+      <child link="${prefix}root_link" />
+      <origin xyz="-0.098 -0.038 0" rpy="0 1.57079 0" />
+    </joint>
   </xacro:macro>
 </robot>

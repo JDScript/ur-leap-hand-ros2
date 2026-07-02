@@ -45,7 +45,7 @@ class ServoTwistController(Node):
         # Parameters for the twist command
         self.linear_x = -0.00  # m/s
         self.linear_y = 0.0
-        self.linear_z = 0.03
+        self.linear_z = -0.03
         self.angular_x = 0.00
         self.angular_y = 0.00
         self.angular_z = 0.0

@@ -259,13 +259,19 @@ def generate_launch_description():
             "kinematics_params_file",
             default_value=PathJoinSubstitution(
                 [
-                    FindPackageShare("ur_description"),
+                    FindPackageShare("custom_ur_control"),
                     "config",
-                    ur_type,
-                    "default_kinematics.yaml",
+                    "robot_calibration.yaml",
                 ]
             ),
-            description="The calibration configuration of the actual robot used.",
+            description=(
+                "Path to this arm's factory kinematics calibration (DH offsets). "
+                "Default = custom_ur_control/config/robot_calibration.yaml (in this pkg). "
+                "To refresh: write to the SOURCE path, then colcon build, e.g.: "
+                "ros2 launch ur_calibration calibration_correction.launch.py "
+                "robot_ip:=<IP> target_filename:=<workspace>/src/custom_ur_control/"
+                "config/robot_calibration.yaml"
+            ),
         )
     )
     declared_arguments.append(

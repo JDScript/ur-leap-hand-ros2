@@ -25,8 +25,8 @@ class MoveItClient(Node):
         goal.request.group_name = "ur_arm"
         goal.request.num_planning_attempts = 5
         goal.request.allowed_planning_time = 5.0
-        goal.request.max_acceleration_scaling_factor = 1.0
-        goal.request.max_velocity_scaling_factor = 1.0
+        goal.request.max_acceleration_scaling_factor = 0.1
+        goal.request.max_velocity_scaling_factor = 0.1
         goal.planning_options.replan_attempts = 5
         goal.planning_options.replan = True
 
@@ -36,6 +36,9 @@ class MoveItClient(Node):
         pose.pose.position.y = 0.2
         pose.pose.position.z = 0.5
         pose.pose.orientation.w = 1.0
+        # pose.pose.orientation.x = -0.0975
+        # pose.pose.orientation.y = -0.5969
+        # pose.pose.orientation.z = 0.7803
 
         constraints = Constraints()
         pc = PositionConstraint()
